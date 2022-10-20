@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>485</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>485</width>
+    <height>450</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>485</width>
+    <height>450</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Text to Speech</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>485</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>485</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>-1</y>
+      <width>485</width>
+      <height>600</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>485</width>
+      <height>600</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>485</width>
+      <height>600</height>
+     </size>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>32</x>
+       <y>20</y>
+       <width>421</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>27</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>CrossCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(85, 170, 0);
+color: rgb(255, 255, 255);
+border-radius:5px;
+</string>
+     </property>
+     <property name="text">
+      <string>TEXT TO SPEECH</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>27</x>
+       <y>210</y>
+       <width>431</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(85, 170, 0);
+color: rgb(255, 255, 255);
+border-radius:5px;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="eng1">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>280</y>
+       <width>80</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {	
+	background-color: rgb(135,135,135);
+	border:2px solid rgb(60,60,60);
+	border-radius:5px;
+	color: rgb(255,255,255);
+	font-weight:bold;
+}
+QPushButton:hover {	
+	background-color: rgb(60,60,60);
+	border:2px solid rgb(70,70,70);
+    border-radius:10px;
+}
+QPushButton:pressed {	
+	background-color: rgb(0,0,0);
+	border:2px solid rgb(201,152,119);
+	color: rgb(255,255,255);
+	border-radius:15px;
+}</string>
+     </property>
+     <property name="text">
+      <string>ENGLISH</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="sp1">
+     <property name="geometry">
+      <rect>
+       <x>122</x>
+       <y>280</y>
+       <width>80</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {	
+	background-color: rgb(135,135,135);
+	border:2px solid rgb(60,60,60);
+	border-radius:5px;
+	color: rgb(255,255,255);
+	font-weight:bold;
+}
+QPushButton:hover {	
+	background-color: rgb(60,60,60);
+	border:2px solid rgb(70,70,70);
+    border-radius:10px;
+}
+QPushButton:pressed {	
+	background-color: rgb(0,0,0);
+	border:2px solid rgb(201,152,119);
+	color: rgb(255,255,255);
+	border-radius:15px;
+}</string>
+     </property>
+     <property name="text">
+      <string>SPANISH</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pt1">
+     <property name="geometry">
+      <rect>
+       <x>204</x>
+       <y>280</y>
+       <width>80</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {	
+	background-color: rgb(135,135,135);
+	border:2px solid rgb(60,60,60);
+	border-radius:5px;
+	color: rgb(255,255,255);
+	font-weight:bold;
+}
+QPushButton:hover {	
+	background-color: rgb(60,60,60);
+	border:2px solid rgb(70,70,70);
+    border-radius:10px;
+}
+QPushButton:pressed {	
+	background-color: rgb(0,0,0);
+	border:2px solid rgb(201,152,119);
+	color: rgb(255,255,255);
+	border-radius:15px;
+}</string>
+     </property>
+     <property name="text">
+      <string>PORTUGUESE</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="it1">
+     <property name="geometry">
+      <rect>
+       <x>286</x>
+       <y>280</y>
+       <width>80</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {	
+	background-color: rgb(135,135,135);
+	border:2px solid rgb(60,60,60);
+	border-radius:5px;
+	color: rgb(255,255,255);
+	font-weight:bold;
+}
+QPushButton:hover {	
+	background-color: rgb(60,60,60);
+	border:2px solid rgb(70,70,70);
+    border-radius:10px;
+}
+QPushButton:pressed {	
+	background-color: rgb(0,0,0);
+	border:2px solid rgb(201,152,119);
+	color: rgb(255,255,255);
+	border-radius:15px;
+}</string>
+     </property>
+     <property name="text">
+      <string>ITALIAN</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="fr1">
+     <property name="geometry">
+      <rect>
+       <x>368</x>
+       <y>280</y>
+       <width>80</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {	
+	background-color: rgb(135,135,135);
+	border:2px solid rgb(60,60,60);
+	border-radius:5px;
+	color: rgb(255,255,255);
+	font-weight:bold;
+}
+QPushButton:hover {	
+	background-color: rgb(60,60,60);
+	border:2px solid rgb(70,70,70);
+    border-radius:10px;
+}
+QPushButton:pressed {	
+	background-color: rgb(0,0,0);
+	border:2px solid rgb(201,152,119);
+	color: rgb(255,255,255);
+	border-radius:15px;
+}</string>
+     </property>
+     <property name="text">
+      <string>FRENCH</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>220</y>
+       <width>351</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>21</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>CrossCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(85, 170, 0);
+color: rgb(255, 255, 255);
+border-radius:5px;
+</string>
+     </property>
+     <property name="text">
+      <string>ACCENT</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPlainTextEdit" name="input">
+     <property name="geometry">
+      <rect>
+       <x>27</x>
+       <y>90</y>
+       <width>431</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor" stdset="0">
+      <cursorShape>CrossCursor</cursorShape>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(170, 170, 127);
+border-radius:5px;
+</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::AdjustToContents</enum>
+     </property>
+     <property name="centerOnScroll">
+      <bool>false</bool>
+     </property>
+     <property name="placeholderText">
+      <string notr="true">Type your text here</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="save">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>372</y>
+       <width>401</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {	
+	background-color: rgb(105,105,105);
+	border:2px solid rgb(60,60,60);
+	border-radius:5px;
+	color: rgb(255,230,230);
+	font-weight:bold;
+}
+QPushButton:hover {	
+	background-color: rgb(60,60,60);
+	border:2px solid rgb(70,70,70);
+    border-radius:10px;
+}
+QPushButton:pressed {	
+	background-color: rgb(0,0,0);
+	border:2px solid rgb(201,152,119);
+	color: rgb(255,255,255);
+	border-radius:20px;
+}</string>
+     </property>
+     <property name="text">
+      <string>SAVE SPEECH</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
